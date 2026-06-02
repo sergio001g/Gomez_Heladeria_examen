@@ -25,8 +25,8 @@ def cobros_view(request):
         # Determinar porcentaje de recargo según días de atraso
         if dias_atraso == 0:
             recargo_pct = 0
-        elif dias_atraso <= 7:
-            recargo_pct = 5
+        elif dias_atraso <= 6:
+            recargo_pct = 4
         elif dias_atraso <= 15:
             recargo_pct = 10
         else:
